@@ -105,5 +105,19 @@
     color: #ffffff;
     text-decoration: none;
   }
-  
+  /* style.css */
 
+/* 1. Estado inicial: move o banner para cima e o torna invisível */
+.banner1-oculto {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: none; /* Garante que não haja transição antes de começar */
+}
+
+/* 2. Classe que dispara a animação */
+.banner1-animado {
+    /* Define a transição suave */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
